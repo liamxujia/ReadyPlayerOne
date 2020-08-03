@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ReadyPlayerOne_Example' do
+  pod 'ReadyPlayerOne', :path => '../'
+
+  target 'ReadyPlayerOne_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

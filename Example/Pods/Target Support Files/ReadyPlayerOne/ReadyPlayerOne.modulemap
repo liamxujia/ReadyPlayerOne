@@ -1,0 +1,6 @@
+framework module ReadyPlayerOne {
+  umbrella header "ReadyPlayerOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

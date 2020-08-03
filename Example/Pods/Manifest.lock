@@ -1,0 +1,16 @@
+PODS:
+  - ReadyPlayerOne (0.1.0)
+
+DEPENDENCIES:
+  - ReadyPlayerOne (from `../`)
+
+EXTERNAL SOURCES:
+  ReadyPlayerOne:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReadyPlayerOne: 0fd473f706de2c069605841c0480cdc8bf5ff617
+
+PODFILE CHECKSUM: 6835ea24f294cda49dce265bdada0df1c3b67d04
+
+COCOAPODS: 1.9.3
