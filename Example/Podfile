@@ -1,4 +1,5 @@
 use_frameworks!
+platform:ios, '13.0'
 
 target 'ReadyPlayerOne_Example' do
   pod 'ReadyPlayerOne', :path => '../'

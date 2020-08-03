@@ -16,7 +16,15 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
-  "source_files": "ReadyPlayerOne/Classes/**/*"
+  "source_files": "ReadyPlayerOne/Classes/**/*",
+  "dependencies": {
+    "ARCL": [
+
+    ],
+    "ARVideoKit": [
+
+    ]
+  }
 }

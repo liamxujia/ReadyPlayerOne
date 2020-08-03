@@ -42,10 +42,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		660CE14016627637205C7CFC /* Pods-ReadyPlayerOne_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadyPlayerOne_Tests.release.xcconfig"; path = "Target Support Files/Pods-ReadyPlayerOne_Tests/Pods-ReadyPlayerOne_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8F5C2C48873A62DC6F20E1D9 /* Pods-ReadyPlayerOne_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadyPlayerOne_Example.debug.xcconfig"; path = "Target Support Files/Pods-ReadyPlayerOne_Example/Pods-ReadyPlayerOne_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9827D4AE6834D8C859C22B57 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9E05555C4D95D9C1CAA2BA60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9827D4AE6834D8C859C22B57 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E05555C4D95D9C1CAA2BA60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B13D656CD6DD813C8D760E12 /* Pods-ReadyPlayerOne_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadyPlayerOne_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ReadyPlayerOne_Tests/Pods-ReadyPlayerOne_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3157D3AB036E6D24E11BE83 /* ReadyPlayerOne.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ReadyPlayerOne.podspec; path = ../ReadyPlayerOne.podspec; sourceTree = "<group>"; };
+		C3157D3AB036E6D24E11BE83 /* ReadyPlayerOne.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReadyPlayerOne.podspec; path = ../ReadyPlayerOne.podspec; sourceTree = "<group>"; };
 		FA11CA576D0F13A4EC37EF11 /* Pods_ReadyPlayerOne_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadyPlayerOne_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				B13D656CD6DD813C8D760E12 /* Pods-ReadyPlayerOne_Tests.debug.xcconfig */,
 				660CE14016627637205C7CFC /* Pods-ReadyPlayerOne_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,10 +269,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReadyPlayerOne_Example/Pods-ReadyPlayerOne_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+				"${BUILT_PRODUCTS_DIR}/ARVideoKit/ARVideoKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReadyPlayerOne/ReadyPlayerOne.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARVideoKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReadyPlayerOne.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
